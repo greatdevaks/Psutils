@@ -14,14 +14,14 @@ for i in vec:
                 res = res.strip("', fd=-1)")
                 print(res)
                 strippedRes = res.rsplit("\\", 1)[1]
-                shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
+                shutil.copyfile(res, "file_directory_path" + strippedRes)
                 file_list.append(strippedRes)
             elif ("pdf" in str(x)):
                 res = str(x).strip("popenfile(path='")
                 res = res.strip("', fd=-1)") + "df"
                 strippedRes = res.rsplit("\\", 1)[1]
                 print(res)
-                shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
+                shutil.copyfile(res, "file_directory_path" + strippedRes)
                 file_list.append(strippedRes)
 
 print(file_list)
