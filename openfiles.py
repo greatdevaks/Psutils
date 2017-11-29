@@ -18,7 +18,11 @@ for i in vec:
                 res = res.strip("', fd=-1)")
                 print(res)
                 strippedRes = res.rsplit("\\", 1)[1]
+<<<<<<< HEAD
                 shutil.copyfile(res, "directory_path" + strippedRes)
+=======
+                shutil.copyfile(res, "file_directory_path" + strippedRes)
+>>>>>>> origin/master
                 file_list.append(strippedRes)
                 print(os.path.getatime(strippedRes))
                 file_atime[strippedRes] = (os.path.getatime(strippedRes))
@@ -31,7 +35,11 @@ for i in vec:
                 res = res.strip("', fd=-1)") + "df"
                 strippedRes = res.rsplit("\\", 1)[1]
                 print(res)
+<<<<<<< HEAD
                 shutil.copyfile(res, "directory_path" + strippedRes)
+=======
+                shutil.copyfile(res, "file_directory_path" + strippedRes)
+>>>>>>> origin/master
                 file_list.append(strippedRes)
                 print(os.path.getatime(strippedRes))
                 file_atime[strippedRes] = (os.path.getatime(strippedRes))
