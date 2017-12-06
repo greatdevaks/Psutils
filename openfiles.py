@@ -58,7 +58,8 @@ for i in vec:
                 res = res.strip("', fd=-1)")
                 print(res)
                 strippedRes = res.rsplit("\\", 1)[1]
-                //shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
+                #for pushing multiple files
+                #shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
                 file_list.append(strippedRes)
                 print(os.path.getatime(strippedRes))
                 file_atime[strippedRes] = (os.path.getatime(strippedRes))
@@ -71,6 +72,7 @@ for i in vec:
                 res = res.strip("', fd=-1)") + "df"
                 strippedRes = res.rsplit("\\", 1)[1]
                 print(res)
+                #for pusing multiple files
                 //shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
                 file_list.append(strippedRes)
                 print(os.path.getatime(strippedRes))
@@ -81,6 +83,7 @@ for i in vec:
                 print("====")
 print(file_list)
 print(file_atime)
+#for pushing only one file having the latest access time
 file_to_upload = max(file_atime.items(), key=operator.itemgetter(1))[0]
 print("The latest file accessed is: {}".format(file_to_upload))
 shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + file_to_upload)
