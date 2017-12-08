@@ -62,6 +62,7 @@ for i in vec:
                 print(res.replace(strippedRes, ""))
                 #for pushing multiple files
                 #shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
+                shutil.copyfile(res, "directory_path" + strippedRes)
                 file_list.append(strippedRes)
                 print(os.path.getatime(res))
                 # getatime for getting access time of the file
@@ -77,6 +78,7 @@ for i in vec:
                 print(res)
                 #for pusing multiple files
                 #shutil.copyfile(res, "C:\\Users\\Anmol-Sachdeva\\PycharmProjects\\Psutils\\" + strippedRes)
+                shutil.copyfile(res, "file_directory_path" + strippedRes)
                 file_list.append(strippedRes)
                 print(os.path.getatime(res))
                 #getatime for getting access time of the file
